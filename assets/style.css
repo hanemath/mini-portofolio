@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 60px 10px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    nav .resume {
+        display: none;
+        float: left;
+        position: relative;
+        width: 50%;
+        margin: 15px 20px;
+        text-align: left;
+        color: rgb(252, 249, 249);
+        font : normal 15px;
+        text-decoration: none;
+    }
+    nav {
+        background-color: #5a2c24;
+        padding: 5px;
+        width: 100%;
+        float: right;
+        text-align: center;
+        position: sticky;
+        z-index: 8888;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: inline;
+    }
+    .row {
+        width: 100%;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: inline-block;
+        width: 70%;
+        margin: 20px auto;
+        left: 15%;
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .blogs .card-img {
+        height: 40vw;
+        width: 100%;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    .icons {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: inline-block;
+        width: 80%;
+        left: 10%;
+        margin: 2px auto;
+        text-align: center;
+        padding: 20px;
+        background-color: #5a2c24;
+    }
+    .icons p {
+        font-size: 16px;
+    }
+
+    .biography .table-bio {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .biography .table-head{
+        width : 50%;
+        text-align: start;
+        margin-left: 80px;
+    }
+    
+    .biography .table-data {
+        width: 50%;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .content {
+        float: left;
+        width: 60%;
+        padding: 20px;
+    }
+    aside {
+        float: right;
+        width: 40%;
+        padding-left: 20px;
+        padding: 20px;
+    }
+    nav .resume {
+        float: left;
+        position: relative;
+        width: 50%;
+        margin: 15px 20px;
+        text-align: left;
+        color: rgb(252, 249, 249);
+        font : normal 15px;
+        text-decoration: none;
+    }
+    nav {
+        background-color: #5a2c24;
+        padding: 5px;
+        width:100%;
+        float: right;
+        text-align: end;
+        position: fixed;
+        z-index: 8888;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: inline;
+    }
+    .row {
+        width: 100%;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: inline-block;
+        width: 30%;
+        margin: 10px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .blogs .card-img {
+        height: 11vw;
+        width: 100%;
+    }
+
+    .icons {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: inline-block;
+        width: 48%;
+        margin: 3px auto;
+        text-align: center;
+        padding: 20px;
+        background-color: #5a2c24;
+    }
+
+    .biography .table-bio {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        border-color: #5a2c24;
+        border-width: 2px;
+    }
+    
+    .biography .table-head{
+        width : 50%;
+        text-align: start;
+        margin-left: 20px;
+    }
+    
+    .biography .table-data {
+        width: 50%;
+        text-align: start;
+    }
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: #5a2c24;
+    text-align: center;
+    font-weight: bold;
+}
+
+header {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+nav li a{
+    color: rgb(252, 249, 249);
+    font : normal 15px;
+    text-decoration: none;
+}
+
+h2 {
+    color: #af5241;
+}
+
+.projects .img{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 100%;
+}
+
+.profile .img {
+    position: relative;
+    width: 30%;
+    left: 35%;
+    margin: 0 auto;
+}
+
+.biography {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.blogs .img{
+    width: 100%;
+}
+
+.blogs .likes {
+    display: block;
+}
+
+.blogs .button-blog {
+    margin: 0 10px;
+    padding: 10px 10px;
+    background-color: rgb(168, 32, 14);
+    color: #fff;
+    font: 15px 'Quicksand', sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(116, 114, 114, 0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 70%;
+    text-align: justify;
+	position: relative;
+	margin: 5% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, rgb(238, 180, 180));
+	background: -webkit-linear-gradient(#fff,rgb(238, 180, 180));
+	background: -o-linear-gradient(#fff, rgb(238, 180, 180));
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #5a2c24; }
+
+
+.fa-envelope-open-text, .fa-github, .fa-map-marker-alt, .fa-mobile-alt, .fa-instagram, .fa-medium-m, .fa-linkedin-in,
+.fa-laptop-code {
+    color: #fff;
+}
+
+.icons .text-icon {
+    display: none;
+}
+
+.icons:hover {
+    background-color: rgb(211, 106, 106);
+    color: black;
+}
+
+.icons:hover .text-icon {
+    display: block;
+    margin-top: 10px;
+}
+
+.icons:hover .fa-envelope-open-text, .icons:hover .fa-github, .icons:hover .fa-map-marker-alt, .icons:hover .fa-mobile-alt,
+.icons:hover .fa-instagram, .icons:hover .fa-medium-m, .icons:hover .fa-linkedin-in, .icons:hover .fa-laptop-code {
+    color: black;
+}
+
+.smiles {
+ width: 100%;
+ text-align: center;
+}
+
+footer .credits {
+    font-size : 13px;
+    font-weight: 300;
+}
+
